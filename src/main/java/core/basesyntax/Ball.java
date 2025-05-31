@@ -11,30 +11,19 @@ public class Ball {
         yellow
     }
 
-    private  int number;
-    private  Colors color;
+    private final int NUMBER;
+    private final Colors COLOR;
 
-    public void setColor(Colors color) {
-        this.color = color;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public Colors getColor() {
-        return color;
+    public Ball(Colors color, int number) {
+     this.COLOR = color;
+     this.NUMBER = number;
     }
 
     @Override
     public String toString() {
         return "Ball{" +
-                "number=" + number +
-                ", color=" + color +
+                "number=" + NUMBER +
+                ", color=" + COLOR +
                 '}';
     }
 
